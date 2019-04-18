@@ -15,12 +15,17 @@ handlers:
   static_files: dist/angular-tour-of-heroes/\1
   upload: dist/angular-tour-of-heroes/(.*\.html)
 
+- url: /(.*\.js)
+  static_files: dist/angular-tour-of-heroes/\1
+  upload: dist/angular-tour-of-heroes/(.*\.js)
+
 - url: /
   static_files: dist/angular-tour-of-heroes/index.html
-  upload: dist/angular-tour-of-heroes/*
+  upload: dist/angular-tour-of-heroes/index.html
 
 - url: /.*
-  upload: dist/angular-tour-of-heroes/.*
+  static_files: dist/angular-tour-of-heroes/index.html
+  upload: dist/angular-tour-of-heroes/index.html
 
 skip_files:
   - ^(?!dist)
