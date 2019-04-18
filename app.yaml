@@ -15,5 +15,9 @@ handlers:
   static_files: dist/<app-name>/\1
   upload: dist/<app-name>/(.*\.html)
 
+- url: /
+  static_files: dist/<app-name>/index.html
+  upload: dist/<app-name>/index.html
+
 skip_files:
   - ^(?!dist)
