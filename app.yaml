@@ -20,7 +20,7 @@ handlers:
   upload: dist/angular-tour-of-heroes/*
 
 - url: /.*
-  upload: dist/angular-tour-of-heroes/*
+  upload: dist/angular-tour-of-heroes/.*
 
 skip_files:
   - ^(?!dist)
