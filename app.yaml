@@ -2,6 +2,9 @@ runtime: python27
 api_version: 1
 threadsafe: yes
 
+env_variables:
+  API_KEY: AIzaSyDkHYmlYRXbcB5HrEauCadeXAxTvy-5LLA
+
 handlers:
 
 - url: /(.*\.css)
