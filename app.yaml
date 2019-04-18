@@ -7,17 +7,18 @@ env_variables:
 
 handlers:
 
-- url: /(.*\.css)
-  static_files: dist/<app-name>/\1
-  upload: dist/<app-name>/(.*\.css)
-  
-- url: /(.*\.html)
-  static_files: dist/<app-name>/\1
-  upload: dist/<app-name>/(.*\.html)
-
-- url: /
-  static_files: dist/<app-name>/index.html
-  upload: dist/<app-name>/index.html
+  - url: /
+    static_files: dist/<app-name>/index.html
+    upload: dist/<app-name>/index.html
+  - url: /
+    static_dir: dist
 
 skip_files:
-  - ^(?!dist)
+  - e2e/
+  - node_modules/
+  - src/
+  - ^(.*/)?\..*$
+  - ^(.*/)?.*\.json$
+  - ^(.*/)?.*\.md$
+  - ^(.*/)?.*\.yaml$
+  - ^LICENSE
