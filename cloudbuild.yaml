@@ -3,6 +3,8 @@ steps:
   args: [ 'install' ]
 - name: 'gcr.io/cloud-builders/npm'
   args: [ 'run', 'test-headless' ]
+  env:
+  - 'CHROME_BIN=google-chrome'
 - name: 'gcr.io/cloud-builders/npm'
   args: [ 'run', 'build', '--prod' ]
   # Deploy to google cloud app egnine
