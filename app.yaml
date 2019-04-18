@@ -8,20 +8,20 @@ env_variables:
 handlers:
 
 - url: /(.*\.css)
-  static_files: dist/<app-name>/\1
-  upload: dist/<app-name>/(.*\.css)
+  static_files: dist/angular-tour-of-heroes/\1
+  upload: dist/angular-tour-of-heroes/(.*\.css)
   
 - url: /(.*\.html)
-  static_files: dist/<app-name>/\1
-  upload: dist/<app-name>/(.*\.html)
+  static_files: dist/angular-tour-of-heroes/\1
+  upload: dist/angular-tour-of-heroes/(.*\.html)
 
 - url: /
-  static_files: dist/<app-name>/index.html
-  upload: dist/<app-name>/index.html
+  static_files: dist/angular-tour-of-heroes/index.html
+  upload: dist/angular-tour-of-heroes/index.html
 
 - url: /.*
-  static_files: dist/<app-name>/index.html
-  upload: dist/<app-name>/index.html
+  static_files: dist/angular-tour-of-heroes/index.html
+  upload: dist/angular-tour-of-heroes/index.html
 
 skip_files:
   - ^(?!dist)
