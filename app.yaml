@@ -23,9 +23,8 @@ handlers:
   static_files: dist/angular-tour-of-heroes/index.html
   upload: dist/angular-tour-of-heroes/index.html
 
-- url: /.*
-  static_files: dist/angular-tour-of-heroes/index.html
-  upload: dist/angular-tour-of-heroes/index.html
+- url: /
+  static_dir: dist/angular-tour-of-heroes
 
 skip_files:
   - ^(?!dist)
