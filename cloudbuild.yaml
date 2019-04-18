@@ -2,7 +2,7 @@ steps:
 - name: 'gcr.io/cloud-builders/npm'
   args: [ 'install' ]
 - name: 'gcr.io/cloud-builders/npm'
-  args: [ 'run', 'test' ]
+  args: [ 'run', 'test-headless' ]
 - name: 'gcr.io/cloud-builders/npm'
   args: [ 'run', 'build', '--prod' ]
   # Deploy to google cloud app egnine
