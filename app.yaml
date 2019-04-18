@@ -25,4 +25,4 @@ handlers:
   upload: dist/<app-name>/index.html
 
 skip_files:
-- ^(?!dist)
+  - ^(?!dist)
